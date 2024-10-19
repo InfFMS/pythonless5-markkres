@@ -7,3 +7,14 @@
 # Вывод:
 # значение:3 индексы 2 и 3
 # значение:2 индексы 4 и 5
+import random
+N=int(input())
+znach=[[],[],[],[],[],[]]
+mas=[random.randint(0,5) for i in range(N)]
+#print(mas)
+for i in range(N-1):
+    if mas[i]==mas[i+1]:
+        a='('+str(i)+","+str(i+1)+')'
+        znach[mas[i]].append(a)
+for row in znach:
+    print(row)
