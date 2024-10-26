@@ -6,7 +6,7 @@
 import random
 
 N=int(input())
-mas=[random.randint(0,100) for i in range(N)]
+mas=[random.randint(0,1000) for i in range(N)]
 print(mas)
 udal=[]
 sredn=sum(mas)/N
